@@ -1,4 +1,4 @@
-## EXPLICACAO DO DESENVOLVIMENTO##
+## EXPLICACAO DO DESENVOLVIMENTO ##
 
 Cada aluno deverá desenvolver **individualmente** um **aplicativo Android** com uma proposta coerente, cujas funcionalidades estejam relacionadas a um mesmo problema ou tema.
 
