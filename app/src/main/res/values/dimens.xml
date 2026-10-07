@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_xsmall">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+
+    <dimen name="corner_card">16dp</dimen>
+    <dimen name="touch_target">48dp</dimen>
+
+    <dimen name="product_thumbnail_size">88dp</dimen>
+    <dimen name="product_thumbnail_icon_size">56dp</dimen>
+    <dimen name="poster_image_height">200dp</dimen>
+    <dimen name="poster_icon_size">128dp</dimen>
+    <dimen name="empty_state_icon_size">96dp</dimen>
+    <dimen name="cart_badge_size">18dp</dimen>
+</resources>

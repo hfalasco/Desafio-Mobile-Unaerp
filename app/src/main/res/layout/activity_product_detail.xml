@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tela 2: Detalhe do produto no estilo cartaz de recompensa ("WANTED"). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical"
+    tools:context=".ui.detail.ProductDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/luffy_red">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationContentDescription="@string/detail_back"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/white"
+            app:title="@string/detail_title"
+            app:titleTextAppearance="@style/TextAppearance.GrandLine.ToolbarTitle"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_medium">
+
+            <!-- Cartaz de recompensa -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_wanted_poster"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_large"
+                android:paddingVertical="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_wanted"
+                    android:textAppearance="@style/TextAppearance.GrandLine.Wanted" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="12dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/poster_image_height"
+                    android:background="@drawable/bg_image_frame">
+
+                    <ImageView
+                        android:id="@+id/ivProductIcon"
+                        android:layout_width="@dimen/poster_icon_size"
+                        android:layout_height="@dimen/poster_icon_size"
+                        android:layout_gravity="center"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/ic_figure" />
+
+                    <TextView
+                        android:id="@+id/tvDiscountBadge"
+                        style="@style/Widget.GrandLine.DiscountBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="@dimen/spacing_small"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        tools:text="-12%"
+                        tools:visibility="visible" />
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="12dp" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:textAppearance="?attr/textAppearanceTitleLarge"
+                    android:textColor="@color/ink"
+                    android:textStyle="bold"
+                    tools:text="Figure Monkey D. Luffy – Gear 5" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_reward_label"
+                    android:textAppearance="@style/TextAppearance.GrandLine.SectionLabel" />
+
+                <TextView
+                    android:id="@+id/tvOriginalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.GrandLine.OriginalPrice"
+                    android:visibility="gone"
+                    tools:text="R$ 549,90"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textAppearance="@style/TextAppearance.GrandLine.Price"
+                    android:textSize="28sp"
+                    tools:text="R$ 479,90" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_medium" />
+
+            <!-- Ficha técnica: linhas opcionais somem quando o dado não existe -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/parchment_light"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/parchment_dark"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_medium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_xsmall"
+                        android:text="@string/detail_info_title"
+                        android:textAppearance="@style/TextAppearance.GrandLine.SectionLabel" />
+
+                    <include
+                        android:id="@+id/rowCategory"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/rowCharacter"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/rowArc"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/rowRating"
+                        layout="@layout/view_info_row" />
+
+                    <include
+                        android:id="@+id/rowStock"
+                        layout="@layout/view_info_row" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="12dp" />
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="@color/ink"
+                        tools:text="Estátua em PVC de 28 cm com o capitão dos Chapéus de Palha." />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Barra de compra -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/parchment_light"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/spacing_medium"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.unaerp.grandlinestore.ui.components.QuantityStepperView
+                android:id="@+id/quantityStepper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:stepperMaxValue="10"
+                app:stepperMinValue="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_total_label"
+                    android:textAppearance="?attr/textAppearanceLabelMedium"
+                    android:textColor="@color/wood_brown" />
+
+                <TextView
+                    android:id="@+id/tvTotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:accessibilityLiveRegion="polite"
+                    android:textAppearance="@style/TextAppearance.GrandLine.Price"
+                    tools:text="R$ 959,80" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="@string/detail_add_to_cart"
+            app:icon="@drawable/ic_cart"
+            app:iconGravity="textStart" />
+    </LinearLayout>
+
+</LinearLayout>

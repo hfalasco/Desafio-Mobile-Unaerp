@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ícone adaptativo: chapéu de palha centralizado na zona segura (66dp). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:pivotX="12"
+        android:pivotY="12"
+        android:scaleX="0.55"
+        android:scaleY="0.55">
+        <path
+            android:fillColor="#F2C230"
+            android:pathData="M1.5,15.5C1.5,13.5 6.2,12.2 12,12.2C17.8,12.2 22.5,13.5 22.5,15.5C22.5,17.5 17.8,18.8 12,18.8C6.2,18.8 1.5,17.5 1.5,15.5Z"
+            android:strokeWidth="0.6"
+            android:strokeColor="#8D6E00" />
+        <path
+            android:fillColor="#F2C230"
+            android:pathData="M6.5,14.2C6.5,9.4 8.8,5.5 12,5.5C15.2,5.5 17.5,9.4 17.5,14.2C15.6,14.9 8.4,14.9 6.5,14.2Z"
+            android:strokeWidth="0.6"
+            android:strokeColor="#8D6E00" />
+        <path
+            android:fillColor="#C62828"
+            android:pathData="M6.7,11.9C8.6,12.6 15.4,12.6 17.3,11.9L17.45,13.7C15.5,14.4 8.5,14.4 6.55,13.7Z" />
+    </group>
+</vector>

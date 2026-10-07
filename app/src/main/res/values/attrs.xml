@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="QuantityStepperView">
+        <attr name="stepperMinValue" format="integer" />
+        <attr name="stepperMaxValue" format="integer" />
+        <attr name="stepperValue" format="integer" />
+    </declare-styleable>
+</resources>

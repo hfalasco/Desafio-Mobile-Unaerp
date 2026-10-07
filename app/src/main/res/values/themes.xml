@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.GrandLineStore" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/luffy_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/luffy_red_light</item>
+        <item name="colorOnPrimaryContainer">@color/luffy_red_dark</item>
+        <item name="colorSecondary">@color/straw_yellow</item>
+        <item name="colorOnSecondary">@color/ink</item>
+        <item name="colorSecondaryContainer">@color/straw_yellow_light</item>
+        <item name="colorOnSecondaryContainer">@color/ink</item>
+        <item name="colorTertiary">@color/ocean_blue</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="android:colorBackground">@color/sand</item>
+        <item name="colorOnBackground">@color/ink</item>
+        <item name="colorSurface">@color/parchment_light</item>
+        <item name="colorOnSurface">@color/ink</item>
+    </style>
+
+    <!-- Tipografia -->
+    <style name="TextAppearance.GrandLine.ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.GrandLine.Wanted" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:letterSpacing">0.15</item>
+    </style>
+
+    <style name="TextAppearance.GrandLine.SectionLabel" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/ocean_blue</item>
+    </style>
+
+    <style name="TextAppearance.GrandLine.Price" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/luffy_red_dark</item>
+    </style>
+
+    <style name="TextAppearance.GrandLine.OriginalPrice" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/wood_brown</item>
+    </style>
+
+    <!-- Componentes -->
+    <style name="Widget.GrandLine.DiscountBadge" parent="">
+        <item name="android:background">@drawable/bg_discount_badge</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.GrandLine.CategoryChip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="chipStrokeColor">@color/wood_brown</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="checkedIconTint">@color/ink</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="Widget.GrandLine.StepperButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minWidth">@dimen/touch_target</item>
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/stepper_button_text</item>
+    </style>
+
+</resources>

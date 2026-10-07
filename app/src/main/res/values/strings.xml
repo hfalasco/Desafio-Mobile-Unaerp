@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Grand Line Store</string>
+
+    <!-- Catálogo -->
+    <string name="catalog_subtitle">Loja geek do mundo de One Piece</string>
+    <string name="catalog_welcome_title">Bem-vindo a bordo, nakama!</string>
+    <string name="catalog_welcome_message">Escolha seu tesouro e leve antes que a Marinha chegue.</string>
+    <string name="filter_only_in_stock">Só em estoque</string>
+    <plurals name="catalog_results_count">
+        <item quantity="one">%d tesouro encontrado</item>
+        <item quantity="other">%d tesouros encontrados</item>
+    </plurals>
+    <string name="catalog_empty_title">Nenhum tesouro por aqui…</string>
+    <string name="catalog_empty_message">Tente outra categoria ou desative o filtro de estoque.</string>
+
+    <!-- Categorias -->
+    <string name="category_all">Todos</string>
+    <string name="category_figure">Figures</string>
+    <string name="category_manga">Mangás</string>
+    <string name="category_card_game">Card Game</string>
+    <string name="category_accessory">Acessórios</string>
+
+    <!-- Produto -->
+    <string name="product_character">Personagem: %1$s</string>
+    <string name="product_discount_badge">-%1$d%%</string>
+    <string name="stock_available">Em estoque</string>
+    <plurals name="stock_low">
+        <item quantity="one">Última unidade!</item>
+        <item quantity="other">Últimas %d unidades!</item>
+    </plurals>
+    <string name="stock_sold_out">Esgotado</string>
+
+    <!-- Sacola -->
+    <plurals name="cart_content_description">
+        <item quantity="one">Sacola com %d item</item>
+        <item quantity="other">Sacola com %d itens</item>
+    </plurals>
+    <string name="cart_badge_overflow">%1$d+</string>
+    <string name="cart_added_message">%1$d× %2$s foi para a sacola!</string>
+    <string name="cart_stock_limit_message">Limite de estoque de %1$s já está na sacola.</string>
+    <string name="cart_dialog_title">Sua sacola</string>
+    <string name="cart_dialog_empty">Sua sacola está vazia. Bora caçar uns tesouros!</string>
+    <string name="cart_dialog_item">%1$d× %2$s — %3$s</string>
+    <string name="cart_dialog_total">Total: %1$s</string>
+    <string name="action_ok">Beleza!</string>
+
+    <!-- Detalhe -->
+    <string name="detail_title">Cartaz de recompensa</string>
+    <string name="detail_back">Voltar ao catálogo</string>
+    <string name="detail_wanted">WANTED</string>
+    <string name="detail_reward_label">Recompensa</string>
+    <string name="detail_info_title">Ficha do tesouro</string>
+    <string name="detail_label_category">Categoria</string>
+    <string name="detail_label_character">Personagem</string>
+    <string name="detail_label_arc">Arco</string>
+    <string name="detail_label_rating">Avaliação</string>
+    <string name="detail_label_stock">Estoque</string>
+    <string name="detail_rating_value">★ %1$.1f / 5</string>
+    <string name="detail_no_description">Este tesouro ainda não tem descrição. Dizem que só quem chega a Laugh Tale descobre.</string>
+    <string name="detail_total_label">Total</string>
+    <string name="detail_add_to_cart">Adicionar à sacola</string>
+    <string name="detail_product_not_found">Produto não encontrado.</string>
+
+    <!-- Seletor de quantidade -->
+    <string name="stepper_decrease_symbol">−</string>
+    <string name="stepper_increase_symbol">+</string>
+    <string name="stepper_decrease">Diminuir quantidade</string>
+    <string name="stepper_increase">Aumentar quantidade</string>
+</resources>

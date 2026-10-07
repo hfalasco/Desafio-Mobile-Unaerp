@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Caveira pirata com chapéu de palha (desenho próprio). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Ossos cruzados -->
+    <path
+        android:pathData="M4.5,13L19.5,20.5M4.5,20.5L19.5,13"
+        android:strokeWidth="2"
+        android:strokeColor="#2B1B0E"
+        android:strokeLineCap="round" />
+    <!-- Crânio -->
+    <path
+        android:fillColor="#2B1B0E"
+        android:pathData="M12,5.5C8.4,5.5 6,7.9 6,11.2C6,13.2 6.9,14.6 8.3,15.4L8.3,17.5L15.7,17.5L15.7,15.4C17.1,14.6 18,13.2 18,11.2C18,7.9 15.6,5.5 12,5.5Z" />
+    <!-- Olhos -->
+    <path
+        android:fillColor="#F5E6C4"
+        android:pathData="M8.4,11a1.4,1.4 0,1 1,2.8 0a1.4,1.4 0,1 1,-2.8 0M12.8,11a1.4,1.4 0,1 1,2.8 0a1.4,1.4 0,1 1,-2.8 0" />
+    <!-- Nariz -->
+    <path
+        android:fillColor="#F5E6C4"
+        android:pathData="M12,13.2L11.1,14.6L12.9,14.6Z" />
+    <!-- Dentes -->
+    <path
+        android:pathData="M10.3,17.5V16.2M12,17.5V16.2M13.7,17.5V16.2"
+        android:strokeWidth="0.6"
+        android:strokeColor="#F5E6C4" />
+    <!-- Aba do chapéu -->
+    <path
+        android:fillColor="#F2C230"
+        android:pathData="M4.5,6.2C4.5,5.5 7.9,5 12,5C16.1,5 19.5,5.5 19.5,6.2C19.5,6.9 16.1,7.4 12,7.4C7.9,7.4 4.5,6.9 4.5,6.2Z" />
+    <!-- Copa do chapéu -->
+    <path
+        android:fillColor="#F2C230"
+        android:pathData="M8,5.6C8,3.4 9.8,2 12,2C14.2,2 16,3.4 16,5.6Z" />
+    <!-- Fita -->
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M8.1,4.5H15.9V5.6H8.1Z" />
+</vector>

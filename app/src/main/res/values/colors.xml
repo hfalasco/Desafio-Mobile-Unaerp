@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta inspirada no bando do Chapéu de Palha -->
+    <color name="luffy_red">#C62828</color>
+    <color name="luffy_red_dark">#8E0000</color>
+    <color name="luffy_red_light">#FFCDD2</color>
+    <color name="straw_yellow">#F2C230</color>
+    <color name="straw_yellow_light">#FFE9A8</color>
+    <color name="ocean_blue">#0B3D5C</color>
+    <color name="wood_brown">#5D4037</color>
+    <color name="ink">#2B1B0E</color>
+    <color name="parchment">#F5E6C4</color>
+    <color name="parchment_dark">#E8D3A2</color>
+    <color name="parchment_light">#FFF8E7</color>
+    <color name="sand">#FBF1DC</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Estados de estoque -->
+    <color name="stock_available">#2E7D32</color>
+    <color name="stock_low">#E65100</color>
+    <color name="stock_sold_out">#C62828</color>
+</resources>

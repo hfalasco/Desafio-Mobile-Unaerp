@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Conteúdo do QuantityStepperView (o próprio componente é o LinearLayout pai). -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDecrease"
+        style="@style/Widget.GrandLine.StepperButton"
+        android:layout_width="@dimen/touch_target"
+        android:layout_height="@dimen/touch_target"
+        android:contentDescription="@string/stepper_decrease"
+        android:text="@string/stepper_decrease_symbol" />
+
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="polite"
+        android:gravity="center"
+        android:minWidth="32dp"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="@color/ink"
+        android:textStyle="bold"
+        tools:text="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnIncrease"
+        style="@style/Widget.GrandLine.StepperButton"
+        android:layout_width="@dimen/touch_target"
+        android:layout_height="@dimen/touch_target"
+        android:contentDescription="@string/stepper_increase"
+        android:text="@string/stepper_increase_symbol" />
+</merge>

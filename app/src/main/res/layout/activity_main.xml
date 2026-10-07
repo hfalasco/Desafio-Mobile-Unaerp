@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tela 1: Catálogo. A lista em si vive no ProductListFragment. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical"
+    tools:context=".ui.catalog.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/luffy_red">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:subtitle="@string/catalog_subtitle"
+            app:subtitleTextColor="@color/straw_yellow_light"
+            app:title="@string/app_name"
+            app:titleTextAppearance="@style/TextAppearance.GrandLine.ToolbarTitle"
+            app:titleTextColor="@color/white">
+
+            <!-- Botão da sacola com contador (badge) -->
+            <FrameLayout
+                android:id="@+id/btnCart"
+                android:layout_width="@dimen/touch_target"
+                android:layout_height="@dimen/touch_target"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_cart"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvCartBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/cart_badge_size"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="@dimen/spacing_xsmall"
+                    android:background="@drawable/bg_cart_badge"
+                    android:gravity="center"
+                    android:importantForAccessibility="no"
+                    android:minWidth="@dimen/cart_badge_size"
+                    android:paddingHorizontal="@dimen/spacing_xsmall"
+                    android:textColor="@color/ink"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:text="3"
+                    tools:visibility="visible" />
+            </FrameLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <!-- Faixa de boas-vindas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/straw_yellow"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_medium"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_jolly_roger" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/catalog_welcome_title"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:textColor="@color/ink"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/catalog_welcome_message"
+                    android:textAppearance="?attr/textAppearanceBodySmall"
+                    android:textColor="@color/ink" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:name="com.unaerp.grandlinestore.ui.catalog.ProductListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_product_list" />
+
+</LinearLayout>

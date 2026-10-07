@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cartas sobrepostas (categoria Card Game). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Carta de trás -->
+    <path
+        android:fillColor="#0B3D5C"
+        android:pathData="M4.6,7.2L12.1,5.2L15.6,18.3L8.1,20.3Z" />
+    <!-- Carta da frente -->
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M10,3.5H18A1,1 0,0 1,19 4.5V18.5A1,1 0,0 1,18 19.5H10A1,1 0,0 1,9 18.5V4.5A1,1 0,0 1,10 3.5Z"
+        android:strokeWidth="0.6"
+        android:strokeColor="#8E0000" />
+    <!-- Moldura interna -->
+    <path
+        android:pathData="M10.6,5.1H17.4V17.9H10.6Z"
+        android:strokeWidth="0.5"
+        android:strokeColor="#F2C230" />
+    <!-- Losango central -->
+    <path
+        android:fillColor="#F2C230"
+        android:pathData="M14,8L16.2,11.5L14,15L11.8,11.5Z" />
+</vector>
