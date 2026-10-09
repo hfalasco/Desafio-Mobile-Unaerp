@@ -24,7 +24,7 @@ O aplicativo deve:
 
 Aplicativo Android (Kotlin + Views/XML) de uma **loja geek de colecionáveis de One Piece**: figures, mangás, card game e acessórios. O usuário navega pelo catálogo, filtra por categoria e estoque, abre o produto em um **cartaz de recompensa ("WANTED")**, escolhe a quantidade e adiciona à sacola.
 
-> Produtos, preços e estoques são fictícios. Ícones e ilustrações são vetores próprios (sem imagens oficiais da obra).
+> Produtos, preços e estoques são fictícios.
 
 ## Fluxo
 
@@ -83,5 +83,3 @@ Decisões:
 1. Abra a pasta no **Android Studio** (Ladybug ou mais recente) e aguarde o *Gradle Sync*.
 2. Execute a configuração `app` em um emulador ou dispositivo com Android 8.0 (API 26) ou superior.
 3. Testes unitários: `./gradlew testDebugUnitTest` (ou clique com o botão direito em `app/src/test` → *Run Tests*).
-
-Stack: Kotlin 2.0, AGP 8.7, compile/target SDK 35, min SDK 26, Material 3, AndroidX Lifecycle (ViewModel/LiveData), Fragment KTX, RecyclerView.
