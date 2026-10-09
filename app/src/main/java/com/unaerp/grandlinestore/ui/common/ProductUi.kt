@@ -32,6 +32,26 @@ val ProductCategory.iconRes: Int
         ProductCategory.ACCESSORY -> R.drawable.ic_straw_hat
     }
 
+/**
+ * Foto do produto; `null` quando ainda não há imagem (a UI usa então o ícone da categoria).
+ *
+ * As capas de mangá são as do acervo do projeto: a de `manga-vol-1` é do volume 9 e a de
+ * `manga-vol-100` é do volume 103.
+ */
+@get:DrawableRes
+val Product.imageRes: Int?
+    get() = when (id) {
+        "fig-luffy-gear5" -> R.drawable.img_fig_luffy_gear5
+        "fig-zoro-santoryu" -> R.drawable.img_fig_zoro_santoryu
+        "manga-vol-1" -> R.drawable.img_manga_vol_1
+        "manga-box-east-blue" -> R.drawable.img_manga_box_east_blue
+        "manga-vol-100" -> R.drawable.img_manga_vol_100
+        "card-booster-op01" -> R.drawable.img_card_booster_op01
+        "acc-straw-hat" -> R.drawable.img_acc_straw_hat
+        "acc-den-den-mushi" -> R.drawable.img_acc_den_den_mushi
+        else -> null
+    }
+
 @get:ColorRes
 val StockStatus.colorRes: Int
     get() = when (this) {

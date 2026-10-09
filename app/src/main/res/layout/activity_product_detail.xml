@@ -61,7 +61,9 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/poster_image_height"
-                    android:background="@drawable/bg_image_frame">
+                    android:background="@drawable/bg_image_frame"
+                    android:clipToOutline="true"
+                    android:padding="2dp">
 
                     <ImageView
                         android:id="@+id/ivProductIcon"

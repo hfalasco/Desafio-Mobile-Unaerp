@@ -2,6 +2,7 @@ package com.unaerp.grandlinestore.ui.detail
 
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.SystemBarStyle
 import androidx.activity.enableEdgeToEdge
@@ -12,8 +13,8 @@ import com.unaerp.grandlinestore.databinding.ActivityProductDetailBinding
 import com.unaerp.grandlinestore.domain.model.Product
 import com.unaerp.grandlinestore.ui.common.PriceFormatter
 import com.unaerp.grandlinestore.ui.common.applySystemBarsPadding
+import com.unaerp.grandlinestore.ui.common.bindProductImage
 import com.unaerp.grandlinestore.ui.common.discountLabel
-import com.unaerp.grandlinestore.ui.common.iconRes
 import com.unaerp.grandlinestore.ui.common.labelRes
 import com.unaerp.grandlinestore.ui.common.setStrikeThrough
 import com.unaerp.grandlinestore.ui.common.setTextOrGone
@@ -56,7 +57,11 @@ class ProductDetailActivity : AppCompatActivity() {
     }
 
     private fun bindPoster(product: Product) {
-        binding.ivProductIcon.setImageResource(product.category.iconRes)
+        binding.ivProductIcon.bindProductImage(
+            product,
+            iconSizePx = resources.getDimensionPixelSize(R.dimen.poster_icon_size),
+            photoScaleType = ImageView.ScaleType.FIT_CENTER,
+        )
         binding.ivProductIcon.contentDescription = product.name
         binding.tvDiscountBadge.setTextOrGone(product.discountLabel(resources))
         binding.tvName.text = product.name

@@ -2,6 +2,7 @@ package com.unaerp.grandlinestore.ui.catalog
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -10,9 +11,9 @@ import com.unaerp.grandlinestore.R
 import com.unaerp.grandlinestore.databinding.ItemProductBinding
 import com.unaerp.grandlinestore.domain.model.Product
 import com.unaerp.grandlinestore.ui.common.PriceFormatter
+import com.unaerp.grandlinestore.ui.common.bindProductImage
 import com.unaerp.grandlinestore.ui.common.colorRes
 import com.unaerp.grandlinestore.ui.common.discountLabel
-import com.unaerp.grandlinestore.ui.common.iconRes
 import com.unaerp.grandlinestore.ui.common.labelRes
 import com.unaerp.grandlinestore.ui.common.setStrikeThrough
 import com.unaerp.grandlinestore.ui.common.setTextOrGone
@@ -47,7 +48,11 @@ class ProductAdapter(
             val context = binding.root.context
             val resources = context.resources
 
-            binding.ivProductIcon.setImageResource(product.category.iconRes)
+            binding.ivProductIcon.bindProductImage(
+                product,
+                iconSizePx = resources.getDimensionPixelSize(R.dimen.product_thumbnail_icon_size),
+                photoScaleType = ImageView.ScaleType.CENTER_CROP,
+            )
             binding.tvCategory.setText(product.category.labelRes)
             binding.tvName.text = product.name
             binding.tvCharacter.setTextOrGone(
