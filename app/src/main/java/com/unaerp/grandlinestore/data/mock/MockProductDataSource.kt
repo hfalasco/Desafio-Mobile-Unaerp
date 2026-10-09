@@ -89,14 +89,14 @@ object MockProductDataSource {
             rating = 4.6,
         ),
         Product(
-            id = "card-starter-straw-hat",
-            name = "Starter Deck Bando do Chapéu de Palha",
+            id = "card-starter-shanks",
+            name = "Starter Deck Shanks (ST-23)",
             category = ProductCategory.CARD_GAME,
             priceInCents = 8_990,
             promotionalPriceInCents = 7_990,
             stock = 8,
-            description = "Deck pronto para jogar com Luffy como líder e toda a tripulação.",
-            character = "Monkey D. Luffy",
+            description = "Deck vermelho pronto para jogar com Shanks como líder.",
+            character = "Shanks",
             rating = 4.5,
         ),
         Product(
