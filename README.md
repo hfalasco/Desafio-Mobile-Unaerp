@@ -80,7 +80,7 @@ Decisões:
 
 ## Como executar
 
-1. Abra a pasta no **Android Studio** (Ladybug ou mais recente) e aguarde o *Gradle Sync*.
+1. Abra a pasta no **Android Studio** (Narwhal 3 Feature Drop ou mais recente) e aguarde o *Gradle Sync*.
 2. Execute a configuração `app` em um emulador ou dispositivo com Android 8.0 (API 26) ou superior.
 3. Testes unitários: `./gradlew testDebugUnitTest` (ou clique com o botão direito em `app/src/test` → *Run Tests*).
-4. Se aparecer ‘Incompatible Gradle JVM version’, clique em ‘Apply compatible Gradle JDK configuration and sync’ (o projeto usa Gradle 8.9, compatível com Java até a versão 22).
+4. O projeto usa o Gradle 9.1 (via wrapper), compatível com JDK 17 a 25. Se aparecer ‘Incompatible Gradle JVM version’, clique em ‘Apply compatible Gradle JDK configuration and sync’ ou escolha um JDK entre 17 e 25 em *Settings → Build, Execution, Deployment → Build Tools → Gradle → Gradle JDK*.
